@@ -12,7 +12,7 @@ def create_diff(x,y,z):
 	return diff3
 
 #	To turn on the camera
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 #	take pictures
 
