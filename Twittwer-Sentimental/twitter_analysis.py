@@ -27,7 +27,7 @@ auth.set_access_token=(access_key,access_secret_key)
 connect=tweepy.API(auth)
 
 #Finding Data
-get_data=connect.search(input("Enter the keyword:  "),count=10)
+get_data=connect.search(input("Enter the keyword:  "),count=100)
 #print(type(get_data))
 
 new_data=[]
@@ -62,10 +62,6 @@ for i in good_data:
 		negative+=1
 
 a=['neutral','negative','positive']
-
-positive=(positive)*10
-negative=(negative)*10
-neutral=(neutral)*10
 
 b=[neutral,negative,positive]
 
